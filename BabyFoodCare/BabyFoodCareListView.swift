@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct BabyFoodCareListView: View {
+  @StateObject var viewModel = BabyFoodCareListViewModel()
+  
     var body: some View {
       NavigationStack {
-        List(MockData.cards) { card in
+        List(viewModel.babyFoodCare) { card in
           BabyFoodCareListCell(babyFoodCare: card)
         }
           .navigationTitle("List View")
+      }
+      .onAppear {
+        viewModel.getBabyFoodCare()
       }
     }
 }

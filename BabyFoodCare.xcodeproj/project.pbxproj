@@ -21,6 +21,7 @@
 		EDBA47F62AED758D00B13FA2 /* BabyFoodCareListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47F52AED758D00B13FA2 /* BabyFoodCareListCell.swift */; };
 		EDBA47F82AED942B00B13FA2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47F72AED942B00B13FA2 /* NetworkManager.swift */; };
 		EDBA47FA2AED94D000B13FA2 /* BFCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47F92AED94D000B13FA2 /* BFCError.swift */; };
+		EDBA47FC2AEDA02500B13FA2 /* BabyFoodCareListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47FB2AEDA02500B13FA2 /* BabyFoodCareListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		EDBA47F52AED758D00B13FA2 /* BabyFoodCareListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareListCell.swift; sourceTree = "<group>"; };
 		EDBA47F72AED942B00B13FA2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EDBA47F92AED94D000B13FA2 /* BFCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFCError.swift; sourceTree = "<group>"; };
+		EDBA47FB2AEDA02500B13FA2 /* BabyFoodCareListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				EDBA47F32AED68E200B13FA2 /* BabyFoodCare.swift */,
 				EDBA47F72AED942B00B13FA2 /* NetworkManager.swift */,
 				EDBA47F92AED94D000B13FA2 /* BFCError.swift */,
+				EDBA47FB2AEDA02500B13FA2 /* BabyFoodCareListViewModel.swift */,
 				EDBA47C72AED3D2C00B13FA2 /* Assets.xcassets */,
 				EDBA47C92AED3D2C00B13FA2 /* Preview Content */,
 			);
@@ -285,6 +288,7 @@
 				EDBA47C42AED3D2A00B13FA2 /* BabyFoodCareApp.swift in Sources */,
 				EDBA47F82AED942B00B13FA2 /* NetworkManager.swift in Sources */,
 				EDBA47F62AED758D00B13FA2 /* BabyFoodCareListCell.swift in Sources */,
+				EDBA47FC2AEDA02500B13FA2 /* BabyFoodCareListViewModel.swift in Sources */,
 				EDBA47F42AED68E200B13FA2 /* BabyFoodCare.swift in Sources */,
 				EDBA47F22AED419E00B13FA2 /* FavouriteView.swift in Sources */,
 			);
