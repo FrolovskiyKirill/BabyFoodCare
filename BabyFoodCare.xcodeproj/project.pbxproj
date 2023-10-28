@@ -19,6 +19,8 @@
 		EDBA47F22AED419E00B13FA2 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47F12AED419E00B13FA2 /* FavouriteView.swift */; };
 		EDBA47F42AED68E200B13FA2 /* BabyFoodCare.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47F32AED68E200B13FA2 /* BabyFoodCare.swift */; };
 		EDBA47F62AED758D00B13FA2 /* BabyFoodCareListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47F52AED758D00B13FA2 /* BabyFoodCareListCell.swift */; };
+		EDBA47F82AED942B00B13FA2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47F72AED942B00B13FA2 /* NetworkManager.swift */; };
+		EDBA47FA2AED94D000B13FA2 /* BFCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47F92AED94D000B13FA2 /* BFCError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		EDBA47F12AED419E00B13FA2 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 		EDBA47F32AED68E200B13FA2 /* BabyFoodCare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCare.swift; sourceTree = "<group>"; };
 		EDBA47F52AED758D00B13FA2 /* BabyFoodCareListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareListCell.swift; sourceTree = "<group>"; };
+		EDBA47F72AED942B00B13FA2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EDBA47F92AED94D000B13FA2 /* BFCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFCError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				EDBA47EF2AED413F00B13FA2 /* AccountView.swift */,
 				EDBA47F12AED419E00B13FA2 /* FavouriteView.swift */,
 				EDBA47F32AED68E200B13FA2 /* BabyFoodCare.swift */,
+				EDBA47F72AED942B00B13FA2 /* NetworkManager.swift */,
+				EDBA47F92AED94D000B13FA2 /* BFCError.swift */,
 				EDBA47C72AED3D2C00B13FA2 /* Assets.xcassets */,
 				EDBA47C92AED3D2C00B13FA2 /* Preview Content */,
 			);
@@ -274,8 +280,10 @@
 			files = (
 				EDBA47F02AED413F00B13FA2 /* AccountView.swift in Sources */,
 				EDBA47EE2AED412000B13FA2 /* BabyFoodCareListView.swift in Sources */,
+				EDBA47FA2AED94D000B13FA2 /* BFCError.swift in Sources */,
 				EDBA47C62AED3D2A00B13FA2 /* BabyFoodCareTabView.swift in Sources */,
 				EDBA47C42AED3D2A00B13FA2 /* BabyFoodCareApp.swift in Sources */,
+				EDBA47F82AED942B00B13FA2 /* NetworkManager.swift in Sources */,
 				EDBA47F62AED758D00B13FA2 /* BabyFoodCareListCell.swift in Sources */,
 				EDBA47F42AED68E200B13FA2 /* BabyFoodCare.swift in Sources */,
 				EDBA47F22AED419E00B13FA2 /* FavouriteView.swift in Sources */,
