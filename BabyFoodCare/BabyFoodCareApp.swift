@@ -11,7 +11,7 @@ import SwiftUI
 struct BabyFoodCareApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          BabyFoodCareTabView()
         }
     }
 }

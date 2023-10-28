@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		EDBA47C42AED3D2A00B13FA2 /* BabyFoodCareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47C32AED3D2A00B13FA2 /* BabyFoodCareApp.swift */; };
-		EDBA47C62AED3D2A00B13FA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47C52AED3D2A00B13FA2 /* ContentView.swift */; };
+		EDBA47C62AED3D2A00B13FA2 /* BabyFoodCareTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47C52AED3D2A00B13FA2 /* BabyFoodCareTabView.swift */; };
 		EDBA47C82AED3D2C00B13FA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBA47C72AED3D2C00B13FA2 /* Assets.xcassets */; };
 		EDBA47CB2AED3D2C00B13FA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBA47CA2AED3D2C00B13FA2 /* Preview Assets.xcassets */; };
 		EDBA47D52AED3D2D00B13FA2 /* BabyFoodCareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47D42AED3D2D00B13FA2 /* BabyFoodCareTests.swift */; };
 		EDBA47DF2AED3D2D00B13FA2 /* BabyFoodCareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47DE2AED3D2D00B13FA2 /* BabyFoodCareUITests.swift */; };
 		EDBA47E12AED3D2D00B13FA2 /* BabyFoodCareUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47E02AED3D2D00B13FA2 /* BabyFoodCareUITestsLaunchTests.swift */; };
+		EDBA47EE2AED412000B13FA2 /* BabyFoodCareListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47ED2AED412000B13FA2 /* BabyFoodCareListView.swift */; };
+		EDBA47F02AED413F00B13FA2 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47EF2AED413F00B13FA2 /* AccountView.swift */; };
+		EDBA47F22AED419E00B13FA2 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47F12AED419E00B13FA2 /* FavouriteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		EDBA47C02AED3D2A00B13FA2 /* BabyFoodCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyFoodCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDBA47C32AED3D2A00B13FA2 /* BabyFoodCareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareApp.swift; sourceTree = "<group>"; };
-		EDBA47C52AED3D2A00B13FA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EDBA47C52AED3D2A00B13FA2 /* BabyFoodCareTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareTabView.swift; sourceTree = "<group>"; };
 		EDBA47C72AED3D2C00B13FA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDBA47CA2AED3D2C00B13FA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EDBA47D02AED3D2D00B13FA2 /* BabyFoodCareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabyFoodCareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		EDBA47DA2AED3D2D00B13FA2 /* BabyFoodCareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabyFoodCareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDBA47DE2AED3D2D00B13FA2 /* BabyFoodCareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareUITests.swift; sourceTree = "<group>"; };
 		EDBA47E02AED3D2D00B13FA2 /* BabyFoodCareUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EDBA47ED2AED412000B13FA2 /* BabyFoodCareListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareListView.swift; sourceTree = "<group>"; };
+		EDBA47EF2AED413F00B13FA2 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		EDBA47F12AED419E00B13FA2 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				EDBA47C32AED3D2A00B13FA2 /* BabyFoodCareApp.swift */,
-				EDBA47C52AED3D2A00B13FA2 /* ContentView.swift */,
+				EDBA47C52AED3D2A00B13FA2 /* BabyFoodCareTabView.swift */,
+				EDBA47ED2AED412000B13FA2 /* BabyFoodCareListView.swift */,
+				EDBA47EF2AED413F00B13FA2 /* AccountView.swift */,
+				EDBA47F12AED419E00B13FA2 /* FavouriteView.swift */,
 				EDBA47C72AED3D2C00B13FA2 /* Assets.xcassets */,
 				EDBA47C92AED3D2C00B13FA2 /* Preview Content */,
 			);
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDBA47C62AED3D2A00B13FA2 /* ContentView.swift in Sources */,
+				EDBA47F02AED413F00B13FA2 /* AccountView.swift in Sources */,
+				EDBA47EE2AED412000B13FA2 /* BabyFoodCareListView.swift in Sources */,
+				EDBA47C62AED3D2A00B13FA2 /* BabyFoodCareTabView.swift in Sources */,
 				EDBA47C42AED3D2A00B13FA2 /* BabyFoodCareApp.swift in Sources */,
+				EDBA47F22AED419E00B13FA2 /* FavouriteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
