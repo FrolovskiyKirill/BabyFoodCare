@@ -17,7 +17,7 @@ final class NetworkManager {
   private init() {}
 
 
-  func getAppetizers(completed: @escaping (Result<[BabyFoodCare], BFCError>) -> Void) {
+  func getBabyFoodCares(completed: @escaping (Result<[BabyFoodCare], BFCError>) -> Void) {
     guard let url = URL(string: appetizerURL) else {
       completed(.failure(.invalidURL))
       return
