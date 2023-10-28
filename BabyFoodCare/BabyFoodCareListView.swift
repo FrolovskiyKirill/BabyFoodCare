@@ -10,7 +10,9 @@ import SwiftUI
 struct BabyFoodCareListView: View {
     var body: some View {
       NavigationStack {
-        Text("List View")
+        List(MockData.cards) { card in
+          BabyFoodCareListCell(babyFoodCare: card)
+        }
           .navigationTitle("List View")
       }
     }
