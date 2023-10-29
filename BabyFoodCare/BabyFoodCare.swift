@@ -18,10 +18,6 @@ struct BabyFoodCare: Decodable, Identifiable {
   let carbs: Int
 }
 
-struct BabyFoodCareResponse: Decodable {
-  let request: [BabyFoodCare]
-}
-
 struct MockData {
 
   static let sampleBabyFoodCare = BabyFoodCare(
