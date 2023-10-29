@@ -11,14 +11,13 @@ final class NetworkManager {
 
   static let shared = NetworkManager()
 
-  static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/"
-  private let appetizerURL = baseURL + "appetizers"
+  private let url = "https://davnopora.fun/kir/get"
 
   private init() {}
 
 
   func getBabyFoodCares(completed: @escaping (Result<[BabyFoodCare], BFCError>) -> Void) {
-    guard let url = URL(string: appetizerURL) else {
+    guard let url = URL(string: url) else {
       completed(.failure(.invalidURL))
       return
     }
@@ -41,8 +40,8 @@ final class NetworkManager {
 
       do {
         let decoder = JSONDecoder()
-        let decodedResponse = try decoder.decode(BabyFoodCareResponse.self, from: data)
-        completed(.success(decodedResponse.request))
+        let decodedResponse = try decoder.decode([BabyFoodCare].self, from: data)
+        completed(.success(decodedResponse))
       } catch {
         completed(.failure(.invalidData))
       }
