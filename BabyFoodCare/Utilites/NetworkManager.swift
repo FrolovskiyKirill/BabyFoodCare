@@ -16,7 +16,7 @@ final class NetworkManager {
   private init() {}
 
 
-  func getBabyFoodCares(completed: @escaping (Result<[BabyFoodCare], BFCError>) -> Void) {
+  func getBabyFoodCares(completed: @escaping (Result<[BabyFoodCareModel], BFCError>) -> Void) {
     guard let url = URL(string: url) else {
       completed(.failure(.invalidURL))
       return
@@ -40,7 +40,7 @@ final class NetworkManager {
 
       do {
         let decoder = JSONDecoder()
-        let decodedResponse = try decoder.decode([BabyFoodCare].self, from: data)
+        let decodedResponse = try decoder.decode([BabyFoodCareModel].self, from: data)
         completed(.success(decodedResponse))
       } catch {
         completed(.failure(.invalidData))

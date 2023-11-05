@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BabyFoodCareListCell: View {
   
-  let babyFoodCare: BabyFoodCare
+  let babyFoodCare: BabyFoodCareModel
   
   var body: some View {
     HStack {
