@@ -8,7 +8,7 @@
 import Foundation
 
 final class BabyFoodCareListViewModel: ObservableObject {
-  @Published var babyFoodCare: [BabyFoodCare] = []
+  @Published var babyFoodCare: [BabyFoodCareModel] = []
 
   func getBabyFoodCare() {
     //          isLoading = true
