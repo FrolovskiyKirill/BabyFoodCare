@@ -2,50 +2,52 @@
 //  NetworkManager.swift
 //  BabyFoodCare
 //
-//  Created by Kirill Frolovskiy on 28.10.2023.
+//  Created by Kirill Frolovskiy on 05.11.2023.
 //
 
 import Foundation
+import Combine
 
-final class NetworkManager {
+class NetworkingManager {
 
-  static let shared = NetworkManager()
+    enum NetworkingError: LocalizedError {
+        case badURLResponse(url: URL)
+        case unowned
 
-  private let url = "https://davnopora.fun/kir/get"
-
-  private init() {}
-
-
-  func getBabyFoodCares(completed: @escaping (Result<[BabyFoodCareModel], BFCError>) -> Void) {
-    guard let url = URL(string: url) else {
-      completed(.failure(.invalidURL))
-      return
+        var errorDescription: String? {
+            switch self {
+            case .badURLResponse(url: let url):
+                return "[🔥] Bad response from URL: \(url)"
+            case .unowned:
+                return "[⚠️] Inknown error occured"
+            }
+        }
     }
 
-    let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
-      if let _ = error {
-        completed(.failure(.unableToComplete))
-        return
-      }
+    static func download(url: URL) -> AnyPublisher<Data, Error> {
 
-      guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-        completed(.failure(.invalidResponse))
-        return
-      }
-
-      guard let data = data else {
-        completed(.failure(.invalidData))
-        return
-      }
-
-      do {
-        let decoder = JSONDecoder()
-        let decodedResponse = try decoder.decode([BabyFoodCareModel].self, from: data)
-        completed(.success(decodedResponse))
-      } catch {
-        completed(.failure(.invalidData))
-      }
+        return URLSession.shared.dataTaskPublisher(for: url)
+            .subscribe(on: DispatchQueue.global(qos: .default))
+            .tryMap({ try handleURLResponse(output: $0, url: url) })
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
     }
-    task.resume()
-  }
+
+    static func handleURLResponse(output: URLSession.DataTaskPublisher.Output, url: URL) throws -> Data {
+        guard let response = output.response as? HTTPURLResponse,
+              response.statusCode >= 200 && response.statusCode < 300 else {
+            throw NetworkingError.badURLResponse(url: url)
+              }
+        return output.data
+    }
+
+    static func handleCompletion(completion: Subscribers.Completion<Error>) {
+
+        switch completion {
+        case .finished:
+            break
+        case .failure(let error):
+            print(error.localizedDescription)
+        }
+    }
 }

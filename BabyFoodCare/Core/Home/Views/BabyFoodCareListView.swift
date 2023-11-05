@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct BabyFoodCareListView: View {
-  @StateObject var viewModel = BabyFoodCareListViewModel()
+  @StateObject var babyFoodCareDataService = BabyFoodCareDataService()
   
   var body: some View {
     NavigationStack {
           ScrollView {
               LazyVGrid(columns: [GridItem(.flexible())], spacing: 16) {
-                  ForEach(viewModel.babyFoodCare, id: \.id) { card in
+                  ForEach(babyFoodCareDataService.babyFoodCareModel, id: \.id) { card in
                       BabyFoodCareListCell(babyFoodCare: card)
                   }
               }
@@ -23,7 +23,7 @@ struct BabyFoodCareListView: View {
           .navigationTitle("List View")
       }
       .onAppear {
-          viewModel.getBabyFoodCare()
+        babyFoodCareDataService.getBabyFoodCare()
       }
   }
 }
