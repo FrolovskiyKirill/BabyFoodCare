@@ -19,7 +19,6 @@
 		EDBA47F22AED419E00B13FA2 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47F12AED419E00B13FA2 /* FavouriteView.swift */; };
 		EDBA47F42AED68E200B13FA2 /* BabyFoodCareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47F32AED68E200B13FA2 /* BabyFoodCareModel.swift */; };
 		EDBA47F62AED758D00B13FA2 /* BabyFoodCareListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47F52AED758D00B13FA2 /* BabyFoodCareListCell.swift */; };
-		EDBA47FA2AED94D000B13FA2 /* BFCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47F92AED94D000B13FA2 /* BFCError.swift */; };
 		EDBA47FC2AEDA02500B13FA2 /* BabyFoodCareListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47FB2AEDA02500B13FA2 /* BabyFoodCareListViewModel.swift */; };
 		EDD143532AF8190C009D882F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD143522AF8190C009D882F /* NetworkManager.swift */; };
 		EDD143552AF819DC009D882F /* BabyFoodCareDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD143542AF819DC009D882F /* BabyFoodCareDataService.swift */; };
@@ -62,7 +61,6 @@
 		EDBA47F12AED419E00B13FA2 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 		EDBA47F32AED68E200B13FA2 /* BabyFoodCareModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareModel.swift; sourceTree = "<group>"; };
 		EDBA47F52AED758D00B13FA2 /* BabyFoodCareListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareListCell.swift; sourceTree = "<group>"; };
-		EDBA47F92AED94D000B13FA2 /* BFCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFCError.swift; sourceTree = "<group>"; };
 		EDBA47FB2AEDA02500B13FA2 /* BabyFoodCareListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareListViewModel.swift; sourceTree = "<group>"; };
 		EDD143522AF8190C009D882F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EDD143542AF819DC009D882F /* BabyFoodCareDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareDataService.swift; sourceTree = "<group>"; };
@@ -240,7 +238,6 @@
 		EDD143512AF814DC009D882F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				EDBA47F92AED94D000B13FA2 /* BFCError.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -398,7 +395,6 @@
 				EDBA47EE2AED412000B13FA2 /* BabyFoodCareListView.swift in Sources */,
 				EDD143552AF819DC009D882F /* BabyFoodCareDataService.swift in Sources */,
 				EDD1435B2AF8C980009D882F /* BabyFoodCareImageViewModel.swift in Sources */,
-				EDBA47FA2AED94D000B13FA2 /* BFCError.swift in Sources */,
 				EDBA47C62AED3D2A00B13FA2 /* BabyFoodCareTabView.swift in Sources */,
 				EDD143592AF8C857009D882F /* BabyFoodCareImageView.swift in Sources */,
 				EDD143532AF8190C009D882F /* NetworkManager.swift in Sources */,
