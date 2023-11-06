@@ -26,6 +26,7 @@
 		EDD143592AF8C857009D882F /* BabyFoodCareImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD143582AF8C857009D882F /* BabyFoodCareImageView.swift */; };
 		EDD1435B2AF8C980009D882F /* BabyFoodCareImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1435A2AF8C980009D882F /* BabyFoodCareImageViewModel.swift */; };
 		EDD1435D2AF8CA19009D882F /* BabyFoodCareImageServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1435C2AF8CA19009D882F /* BabyFoodCareImageServise.swift */; };
+		EDD1435F2AF8EEBC009D882F /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1435E2AF8EEBC009D882F /* LocalFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		EDD143582AF8C857009D882F /* BabyFoodCareImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareImageView.swift; sourceTree = "<group>"; };
 		EDD1435A2AF8C980009D882F /* BabyFoodCareImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareImageViewModel.swift; sourceTree = "<group>"; };
 		EDD1435C2AF8CA19009D882F /* BabyFoodCareImageServise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareImageServise.swift; sourceTree = "<group>"; };
+		EDD1435E2AF8EEBC009D882F /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				EDD143522AF8190C009D882F /* NetworkManager.swift */,
+				EDD1435E2AF8EEBC009D882F /* LocalFileManager.swift */,
 			);
 			path = Utilites;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 			files = (
 				EDD1435D2AF8CA19009D882F /* BabyFoodCareImageServise.swift in Sources */,
 				EDBA47F02AED413F00B13FA2 /* AccountView.swift in Sources */,
+				EDD1435F2AF8EEBC009D882F /* LocalFileManager.swift in Sources */,
 				EDBA47EE2AED412000B13FA2 /* BabyFoodCareListView.swift in Sources */,
 				EDD143552AF819DC009D882F /* BabyFoodCareDataService.swift in Sources */,
 				EDD1435B2AF8C980009D882F /* BabyFoodCareImageViewModel.swift in Sources */,

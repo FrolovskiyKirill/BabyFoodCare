@@ -14,13 +14,27 @@ final class BabyFoodCareImageServise {
 
   private var imageSubscription: AnyCancellable?
   private let babyFoodCareModel: BabyFoodCareModel
+  private let fileManager = LocalFileManager.instanse
+  private let folderName = "bfg_images"
+  private let imageName: String
 
   init(babyFoodCareModel: BabyFoodCareModel) {
     self.babyFoodCareModel = babyFoodCareModel
+    self.imageName = String(babyFoodCareModel.id)
     getBabyFoodCareImage()
   }
 
   private func getBabyFoodCareImage() {
+    if let savedImage = fileManager.getImage(imageName: imageName, folderName: folderName) {
+image = savedImage
+      print("Retrieved image from file Manager!")
+    } else {
+      downloadBabyFoodCareImage()
+      print("Downloading image now")
+    }
+  }
+
+  private func downloadBabyFoodCareImage() {
     guard let url = URL(string: babyFoodCareModel.imageURL) else { return }
 
     imageSubscription = NetworkingManager.download(url: url)
@@ -28,8 +42,10 @@ final class BabyFoodCareImageServise {
         return UIImage(data: data)
       })
       .sink(receiveCompletion: NetworkingManager.handleCompletion, receiveValue: { [weak self] returnedImage in
-        self?.image = returnedImage
-        self?.imageSubscription?.cancel()
+        guard let self = self, let downloadedImage = returnedImage else { return }
+        self.image = downloadedImage
+        self.imageSubscription?.cancel()
+        self.fileManager.saveImage(image: downloadedImage, imageName: imageName, folderName: folderName)
       })
   }
 
