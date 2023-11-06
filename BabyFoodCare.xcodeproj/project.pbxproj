@@ -23,6 +23,9 @@
 		EDBA47FC2AEDA02500B13FA2 /* BabyFoodCareListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA47FB2AEDA02500B13FA2 /* BabyFoodCareListViewModel.swift */; };
 		EDD143532AF8190C009D882F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD143522AF8190C009D882F /* NetworkManager.swift */; };
 		EDD143552AF819DC009D882F /* BabyFoodCareDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD143542AF819DC009D882F /* BabyFoodCareDataService.swift */; };
+		EDD143592AF8C857009D882F /* BabyFoodCareImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD143582AF8C857009D882F /* BabyFoodCareImageView.swift */; };
+		EDD1435B2AF8C980009D882F /* BabyFoodCareImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1435A2AF8C980009D882F /* BabyFoodCareImageViewModel.swift */; };
+		EDD1435D2AF8CA19009D882F /* BabyFoodCareImageServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1435C2AF8CA19009D882F /* BabyFoodCareImageServise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		EDBA47FB2AEDA02500B13FA2 /* BabyFoodCareListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareListViewModel.swift; sourceTree = "<group>"; };
 		EDD143522AF8190C009D882F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EDD143542AF819DC009D882F /* BabyFoodCareDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareDataService.swift; sourceTree = "<group>"; };
+		EDD143582AF8C857009D882F /* BabyFoodCareImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareImageView.swift; sourceTree = "<group>"; };
+		EDD1435A2AF8C980009D882F /* BabyFoodCareImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareImageViewModel.swift; sourceTree = "<group>"; };
+		EDD1435C2AF8CA19009D882F /* BabyFoodCareImageServise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFoodCareImageServise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +168,7 @@
 		EDD143492AF811FD009D882F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				EDD143562AF8C7EA009D882F /* Components */,
 				EDD1434A2AF8122D009D882F /* Home */,
 				EDD1434D2AF813DD009D882F /* Account */,
 				EDD1434C2AF813C9009D882F /* Favourite */,
@@ -206,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				EDD143542AF819DC009D882F /* BabyFoodCareDataService.swift */,
+				EDD1435C2AF8CA19009D882F /* BabyFoodCareImageServise.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -232,6 +240,23 @@
 				EDBA47F92AED94D000B13FA2 /* BFCError.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EDD143562AF8C7EA009D882F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EDD143572AF8C80B009D882F /* BabyFoodCareImage */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EDD143572AF8C80B009D882F /* BabyFoodCareImage */ = {
+			isa = PBXGroup;
+			children = (
+				EDD143582AF8C857009D882F /* BabyFoodCareImageView.swift */,
+				EDD1435A2AF8C980009D882F /* BabyFoodCareImageViewModel.swift */,
+			);
+			path = BabyFoodCareImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,11 +389,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDD1435D2AF8CA19009D882F /* BabyFoodCareImageServise.swift in Sources */,
 				EDBA47F02AED413F00B13FA2 /* AccountView.swift in Sources */,
 				EDBA47EE2AED412000B13FA2 /* BabyFoodCareListView.swift in Sources */,
 				EDD143552AF819DC009D882F /* BabyFoodCareDataService.swift in Sources */,
+				EDD1435B2AF8C980009D882F /* BabyFoodCareImageViewModel.swift in Sources */,
 				EDBA47FA2AED94D000B13FA2 /* BFCError.swift in Sources */,
 				EDBA47C62AED3D2A00B13FA2 /* BabyFoodCareTabView.swift in Sources */,
+				EDD143592AF8C857009D882F /* BabyFoodCareImageView.swift in Sources */,
 				EDD143532AF8190C009D882F /* NetworkManager.swift in Sources */,
 				EDBA47C42AED3D2A00B13FA2 /* BabyFoodCareApp.swift in Sources */,
 				EDBA47F62AED758D00B13FA2 /* BabyFoodCareListCell.swift in Sources */,
