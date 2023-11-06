@@ -9,16 +9,16 @@ import SwiftUI
 
 struct BabyFoodCareListView: View {
   @StateObject var babyFoodCareDataService = BabyFoodCareDataService()
-  
+
   var body: some View {
     NavigationStack {
           ScrollView {
-              LazyVGrid(columns: [GridItem(.flexible())], spacing: 16) {
+              LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 4) {
                   ForEach(babyFoodCareDataService.babyFoodCareModel, id: \.id) { card in
                       BabyFoodCareListCell(babyFoodCare: card)
                   }
               }
-              .padding(16)
+              .padding(8)
           }
           .navigationTitle("List View")
       }

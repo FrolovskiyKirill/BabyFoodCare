@@ -12,20 +12,26 @@ struct BabyFoodCareListCell: View {
   let babyFoodCare: BabyFoodCareModel
   
   var body: some View {
-    HStack {
+    VStack(alignment: .leading) {
       BabyFoodCareImageView(babyFoodCareModel: babyFoodCare)
-        .frame(width: 120, height: 90)
+        .frame(width: 170, height: 130)
         .cornerRadius(8)
-      VStack(alignment: .leading, spacing: 5) {
+        .overlay(
+                  Image(systemName: "star")
+                    .foregroundColor(.gray)
+                    .font(.system(size: 16))
+                    .padding(8),
+                  alignment: .topTrailing
+                )
         Text(babyFoodCare.name)
-          .font(.title2)
-          .fontWeight(.medium)
-        
+          .font(.title3)
+          .fontWeight(.light)
+
         Text("$\(babyFoodCare.price, specifier: "%.2f")")
           .foregroundColor(.secondary)
-          .fontWeight(.semibold)
-      }
-      .padding(.leading)
+          .fontWeight(.ultraLight)
+
+      .padding(.trailing)
     }
   }
 }
