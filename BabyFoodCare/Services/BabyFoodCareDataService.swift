@@ -25,7 +25,7 @@ class BabyFoodCareDataService: ObservableObject {
 
     BFGSubscription = NetworkingManager.download(url: url)
       .decode(type: [BabyFoodCareModel].self, decoder: JSONDecoder())
-      .sink(receiveCompletion: NetworkingManager.handleCompletion, receiveValue: { [weak self] (returnedBabyFoodCareData) in
+      .sink(receiveCompletion: NetworkingManager.handleCompletion, receiveValue: { [weak self] returnedBabyFoodCareData in
         self?.babyFoodCareModel = returnedBabyFoodCareData
         self?.BFGSubscription?.cancel()
       })
