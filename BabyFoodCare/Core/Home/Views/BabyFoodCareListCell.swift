@@ -19,9 +19,16 @@ struct BabyFoodCareListCell: View {
         .overlay(
                   Image(systemName: "star")
                     .foregroundColor(.gray)
-                    .font(.system(size: 16))
+                    .font(.system(size: 20))
                     .padding(8),
                   alignment: .topTrailing
+                )
+        .overlay(
+                  Image(systemName: "fork.knife")
+                    .foregroundColor(.gray)
+                    .font(.system(size: 20))
+                    .padding(8),
+                  alignment: .topLeading
                 )
         Text(babyFoodCare.name)
           .font(.title3)
