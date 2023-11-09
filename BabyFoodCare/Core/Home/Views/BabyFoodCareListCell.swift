@@ -8,37 +8,59 @@
 import SwiftUI
 
 struct BabyFoodCareListCell: View {
-  
+
+  @State var isFavorite: Bool = false
+  @State var isTried: Bool = false
+
   let babyFoodCare: BabyFoodCareModel
-  
+
   var body: some View {
     VStack(alignment: .leading) {
       BabyFoodCareImageView(babyFoodCareModel: babyFoodCare)
         .frame(width: 170, height: 130)
         .cornerRadius(8)
-        .overlay(
-                  Image(systemName: "star")
-                    .foregroundColor(.gray)
-                    .font(.system(size: 20))
-                    .padding(8),
-                  alignment: .topTrailing
-                )
-        .overlay(
-                  Image(systemName: "fork.knife")
-                    .foregroundColor(.gray)
-                    .font(.system(size: 20))
-                    .padding(8),
-                  alignment: .topLeading
-                )
-        Text(babyFoodCare.name)
-          .font(.title3)
-          .fontWeight(.light)
+        .overlay(alignment: .topTrailing, content: {
+          Button {
+            isFavorite.toggle()
+          } label: {
+            //            Image("mail.stack")
+            Label("", systemImage: isFavorite ? "star.fill" : "star")
+              .foregroundColor(isFavorite ? .yellow : .gray)
+              .font(.system(size: 20))
+              .symbolEffect(.bounce, value: isFavorite)
+              .padding(6)
+          }
+        })
+        .overlay(alignment: .topLeading, content: {
+          Button {
+            isTried.toggle()
+          } label: {
+            Label("", systemImage: "fork.knife")
+              .foregroundColor(isTried ? .green : .gray)
+              .font(.system(size: 20))
+              .symbolEffect(.bounce, value: isTried)
+              .padding(6)
+          }
+        })
+        .overlay(alignment: .bottomTrailing, content: {
+          Button {
+//            isTried.toggle()
+          } label: {
+            Label("", systemImage: "exclamationmark.bubble")
+              .foregroundColor(.red)
+              .font(.system(size: 20))
+//              .symbolEffect(.bounce, value: isTried)
+              .padding(6)
+          }
+        })
+      Text(babyFoodCare.name)
+        .font(.title3)
+        .fontWeight(.light)
+      Text("$\(babyFoodCare.price, specifier: "%.2f")")
+        .foregroundColor(.secondary)
+        .fontWeight(.ultraLight)
 
-        Text("$\(babyFoodCare.price, specifier: "%.2f")")
-          .foregroundColor(.secondary)
-          .fontWeight(.ultraLight)
-
-      .padding(.trailing)
+        .padding(.trailing)
     }
   }
 }
