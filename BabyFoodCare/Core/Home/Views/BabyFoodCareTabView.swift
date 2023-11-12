@@ -12,14 +12,14 @@ struct BabyFoodCareTabView: View {
     TabView {
       BabyFoodCareListView()
         .tabItem {
-          Image(systemName: "house")
+          Image(systemName: "carrot")
           Text("Home")
         }
-      AccountView()
-        .tabItem {
-          Image(systemName: "person")
-          Text("Account")
-        }
+//      AccountView()
+//        .tabItem {
+//          Image(systemName: "person")
+//          Text("Account")
+//        }
       FavouriteView()
         .tabItem {
           Image(systemName: "star")
