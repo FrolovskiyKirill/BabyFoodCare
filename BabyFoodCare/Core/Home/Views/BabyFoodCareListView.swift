@@ -15,12 +15,17 @@ struct BabyFoodCareListView: View {
           ScrollView {
               LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 4) {
                   ForEach(babyFoodCareDataService.babyFoodCareModel, id: \.id) { card in
+                    NavigationLink(value: card) {
                       BabyFoodCareListCell(babyFoodCare: card)
+                    }
                   }
               }
               .padding(8)
           }
           .navigationTitle("List View")
+          .navigationDestination(for: BabyFoodCareModel.self) { card in
+            DetaiBabyFoodCarelView(babyFoodCare: card)
+          }
       }
       .onAppear {
         babyFoodCareDataService.getBabyFoodCare()
