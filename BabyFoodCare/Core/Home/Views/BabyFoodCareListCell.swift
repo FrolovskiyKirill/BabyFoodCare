@@ -53,10 +53,10 @@ struct BabyFoodCareListCell: View {
               .padding(6)
           }
         })
-      Text(babyFoodCare.name)
+      Text(babyFoodCare.title)
         .font(.title3)
         .fontWeight(.light)
-      Text("$\(babyFoodCare.price, specifier: "%.2f")")
+      Text(babyFoodCare.foodType)
         .foregroundColor(.secondary)
         .fontWeight(.ultraLight)
 
