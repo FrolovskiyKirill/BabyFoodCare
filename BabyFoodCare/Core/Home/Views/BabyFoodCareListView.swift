@@ -18,13 +18,14 @@ struct BabyFoodCareListView: View {
                     NavigationLink(value: card) {
                       BabyFoodCareListCell(babyFoodCare: card)
                     }
+                    .buttonStyle(PlainButtonStyle())
                   }
               }
               .padding(8)
           }
-          .navigationTitle("List View")
+//          .navigationTitle("List View")
           .navigationDestination(for: BabyFoodCareModel.self) { card in
-            DetaiBabyFoodCarelView(babyFoodCare: card)
+            DetailBabyFoodCarelView(babyFoodCare: card)
           }
       }
       .onAppear {

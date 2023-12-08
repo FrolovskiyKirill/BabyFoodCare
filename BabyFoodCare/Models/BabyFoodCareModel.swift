@@ -9,9 +9,9 @@ import Foundation
 
 struct BabyFoodCareModel: Decodable, Identifiable, Hashable {
   let id: Int
-  let name: String
+  let title: String
   let description: String
-  let price: Double
+  let foodType: String
   let imageURL: String
   let calories: Int
   let protein: Int
@@ -50,9 +50,9 @@ struct MockData {
 
   static let sampleBabyFoodCare = BabyFoodCareModel(
     id: 0001,
-    name: "Test Pepper",
+    title: "Test Pepper",
     description: "This is the description for my appetizer. It's yummy.",
-    price: 9.99,
+    foodType: "Vegi",
     imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/asian-flank-steak.jpg",
     calories: 99,
     protein: 99,
@@ -84,9 +84,9 @@ struct MockData {
 
   static let orderItemOne = BabyFoodCareModel(
     id: 0001,
-    name: "Test Appetizer One",
+    title: "Test Appetizer One",
     description: "This is the description for my appetizer. It's yummy.",
-    price: 9.99,
+    foodType: "Vegi",
     imageURL: "",
     calories: 99,
     protein: 99,
@@ -95,9 +95,9 @@ struct MockData {
 
   static let orderItemTwo = BabyFoodCareModel(
     id: 0002,
-    name: "Test Appetizer Two",
+    title: "Test Appetizer Two",
     description: "This is the description for my appetizer. It's yummy.",
-    price: 9.99,
+    foodType: "Vegi",
     imageURL: "",
     calories: 99,
     protein: 99,
@@ -106,9 +106,9 @@ struct MockData {
 
   static let orderItemThree = BabyFoodCareModel(
     id: 0003,
-    name: "Test Appetizer Three",
+    title: "Test Appetizer Three",
     description: "This is the description for my appetizer. It's yummy.",
-    price: 9.99,
+    foodType: "Vegi",
     imageURL: "",
     calories: 99,
     protein: 99,
@@ -121,9 +121,9 @@ struct MockData2 {
 
   static let sampleBabyFoodCare = BabyFoodCareModel(
     id: 0001,
-    name: "Test Pepper",
+    title: "Test Pepper",
     description: "This is the description for my appetizer. It's yummy.",
-    price: 9.99,
+    foodType: "Vegi",
     imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/asian-flank-steak.jpg",
     calories: 99,
     protein: 99,
