@@ -20,7 +20,7 @@ class BabyFoodCareDataService: ObservableObject {
 
   func getBabyFoodCare() {
 
-    guard let url = URL(string: "https://davnopora.fun/kir/get")
+    guard let url = URL(string: "https://davnopora.fun/kir/food")
     else { return }
 
     BFGSubscription = NetworkingManager.download(url: url)
